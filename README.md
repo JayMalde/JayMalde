@@ -4,6 +4,12 @@
 ### Master's Degree in Computer Applications (MCA). K J Somaiya Institute of Management, Vidyavihar, Mumbai
 ### Bachelor's Degree in Information Technology (BScIT). SIES, Nerul, Navi Mumbai
 
+# Professional Expreience
+## Atlas Consulting
+### Intern Salesforce Developer (Jan 2022 - Present)
+* Learning how to use Salerforce
+* Completed Trailhead for Salerforce Developer
+
 # Summary
 ## This is a project that I created for Codeicon Hackathon 3.0 in K J Somaiya Institute of Management
 
