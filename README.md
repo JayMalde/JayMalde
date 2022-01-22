@@ -1,5 +1,9 @@
 # Jay Malde Profile
 
+# Education
+> Master's Degree in Computer Applications (MCA). K J Somaiya Institute of Management, Vidyavihar, Mumbai
+> Bachelor's Degree in Information Technology (BScIT). SIES, Nerul, Navi Mumbai
+
 # Summary
 ## This is a project that I created for Codeicon Hackathon 3.0 in K J Somaiya Institute of Management
 
