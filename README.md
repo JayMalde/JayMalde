@@ -1,3 +1,3 @@
 # Jay Malde Profile
 
-https://jaymalde.engineer/
+https://jaymalde.co/
