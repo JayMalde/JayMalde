@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio - Jay Malde</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 font-sans text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-200">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-gray-600 hover:text-blue-600 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+                </svg>
+                Back to Home
+            </a>
+            <div class="text-xl font-bold text-gray-900">Portfolio</div>
+            <a href="contact.html" class="bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300 flex items-center space-x-2">
+                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+                </svg>
+                <span>Book Free Consulting Session</span>
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <section class="text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">Project Portfolio</h1>
+            <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Real-world Salesforce implementations delivering measurable business outcomes</p>
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-gray-900">36k+</p>
+                    <p class="text-gray-500 mt-1">Total AppExchange Installs</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-gray-900">50+</p>
+                    <p class="text-gray-500 mt-1">Successful Implementations</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-4xl font-bold text-gray-900">4.8/5</p>
+                    <p class="text-gray-500 mt-1">Average Client Rating</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-16 border-t border-b border-gray-200 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2 text-gray-500" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 3a1 1 0 011-1h12a1 1 0 011 1v3a1 1 0 01-.293.707L12 11.414V15a1 1 0 01-.293.707l-2 2A1 1 0 018 17v-5.586L3.293 6.707A1 1 0 013 6V3z" clip-rule="evenodd" /></svg>
+                    Filter Projects:
+                </div>
+                <div id="filter-buttons" class="flex items-center space-x-2">
+                    <button data-filter="all" class="filter-btn active bg-blue-600 text-white px-4 py-1.5 rounded-full text-sm font-semibold">All Projects (6)</button>
+                    <button data-filter="service-cloud" class="filter-btn bg-white text-gray-700 border border-gray-300 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-gray-100">Service Cloud (3)</button>
+                    <button data-filter="appexchange" class="filter-btn bg-white text-gray-700 border border-gray-300 px-4 py-1.5 rounded-full text-sm font-semibold hover:bg-gray-100">AppExchange (3)</button>
+                </div>
+            </div>
+        </section>
+        
+        <section id="project-grid" class="mt-12 grid md:grid-cols-2 gap-8">
+            <div class="project-card bg-white rounded-lg shadow-md overflow-hidden" data-category="service-cloud">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Healthcare Customer Service Portal</h3>
+                            <p class="text-md text-gray-500">MedCare Health Systems</p>
+                        </div>
+                        <span class="flex items-center font-bold text-yellow-500 bg-yellow-50 px-3 py-1 rounded-full text-sm">4.8★</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div><h4 class="font-bold">Challenge:</h4><p class="text-gray-600">Legacy support system with 6+ hour response times and poor patient satisfaction scores.</p></div>
+                        <div><h4 class="font-bold">Solution:</h4><p class="text-gray-600">Implemented comprehensive Service Cloud solution with Knowledge Base, Case Management, and Omni-Channel routing.</p></div>
+                        <div>
+                            <h4 class="font-bold flex items-center mb-2"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Key Outcomes:</h4>
+                            <ul class="list-disc list-inside text-gray-600 ml-2 space-y-1">
+                                <li>Reduced average response time from 6 hours to 3 hours (50% improvement)</li>
+                                <li>Increased patient satisfaction score from 3.2 to 4.7 stars</li>
+                                <li>Automated 40% of routine inquiries through Knowledge Base</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 01-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>Technologies:</h4>
+                             <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Service Cloud</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Knowledge Management</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Omni-Channel</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+                            <p class="text-gray-700 italic">"Jay transformed our patient support experience. The new system has dramatically improved our response times and patient satisfaction."</p>
+                            <p class="text-right font-semibold text-sm mt-2 text-gray-600">— Dr. Sarah Wilson, Director of Operations</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card bg-white rounded-lg shadow-md overflow-hidden" data-category="appexchange">
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900">Customer Insights Dashboard</h3>
+                            <p class="text-md text-gray-500">Analytics & Reporting Platform</p>
+                        </div>
+                        <span class="flex items-center font-bold text-yellow-500 bg-yellow-50 px-3 py-1 rounded-full text-sm">4.9★</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div><h4 class="font-bold">Challenge:</h4><p class="text-gray-600">Sales and marketing teams needing advanced customer analytics and predictive insights not available in standard Salesforce reports.</p></div>
+                        <div><h4 class="font-bold">Solution:</h4><p class="text-gray-600">Lightning-based analytics package with Einstein Analytics integration, custom dashboards, and predictive modeling capabilities.</p></div>
+                        <div>
+                            <h4 class="font-bold flex items-center mb-2"><svg class="h-5 w-5 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>Key Outcomes:</h4>
+                            <ul class="list-disc list-inside text-gray-600 ml-2 space-y-1">
+                                <li>15,800+ successful deployments</li>
+                                <li>4.9/5 star rating (highest in category)</li>
+                                <li>Increased sales conversion by 37%</li>
+                                <li>Reduced customer churn by 25%</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold flex items-center mb-2"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 mr-2" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 01-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>Technologies:</h4>
+                             <div class="flex flex-wrap gap-2 mt-1">
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Einstein Analytics</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Lightning Web Components</span>
+                                <span class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-1 rounded">Apex</span>
+                            </div>
+                        </div>
+                        <div class="bg-blue-50 border-l-4 border-blue-500 p-4 rounded mt-4">
+                            <p class="text-gray-700 italic">"The insights we get from this dashboard have completely changed how we approach customer relationships."</p>
+                            <p class="text-right font-semibold text-sm mt-2 text-gray-600">— David Kim, Sales Director</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </section>
+
+         <section class="mt-20">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg">
+                <div class="container mx-auto px-6 py-16 text-center">
+                     <h2 class="text-4xl font-bold">Ready to Start Your Next Project?</h2>
+                     <p class="mt-4 text-lg text-blue-200 max-w-2xl mx-auto">
+                         Get a free consultation to discuss how we can deliver similar results for your organization.
+                     </p>
+                     <div class="mt-10 flex justify-center items-center space-x-4">
+                        <a href="contact.html" class="bg-white text-blue-700 font-semibold px-8 py-3 rounded-lg hover:bg-gray-200 transition duration-300">
+                            Book Free Consulting Session
+                        </a>
+                        <a href="index.html" class="bg-transparent text-white font-semibold px-8 py-3 rounded-lg border border-blue-400 hover:bg-blue-500 transition duration-300 flex items-center">
+                           &larr; Back to Home
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="bg-gray-900 text-gray-400">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div>
+                    <h3 class="text-xl font-bold text-white">Jay Malde</h3>
+                    <p class="text-sm">Salesforce Consultant & AppExchange Developer</p>
+                </div>
+                <div class="flex items-center space-x-6 mt-4 md:mt-0">
+                    <a href="mailto:jaymalde0@gmail.com" class="hover:text-white">jaymalde0@gmail.com</a>
+                    <a href="tel:+919004422995" class="hover:text-white">+91-90044-22995</a>
+                    <a href="#" class="hover:text-white">LinkedIn</a>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-6 text-center text-sm">
+                <p>&copy; 2024 Jay Malde. All rights reserved. | <a href="#" class="hover:text-white">Privacy Policy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('#filter-buttons .filter-btn');
+        const projectCards = document.querySelectorAll('#project-grid .project-card');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Update active button style
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-blue-600', 'text-white');
+                    btn.classList.add('bg-white', 'text-gray-700', 'border', 'border-gray-300', 'hover:bg-gray-100');
+                });
+                button.classList.add('active', 'bg-blue-600', 'text-white');
+                button.classList.remove('bg-white', 'text-gray-700', 'border', 'border-gray-300', 'hover:bg-gray-100');
+
+                const filter = button.getAttribute('data-filter');
+
+                // Filter cards
+                projectCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
